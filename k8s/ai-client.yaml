@@ -15,7 +15,6 @@ spec:
     spec:
       containers:
         - name: ai-client
-          image: curlimages/curl:latest
-          command:
-            - sleep
-            - "3600"
+          image: supraa23/ai-client:1.0
+          ports:
+            - containerPort: 5000
